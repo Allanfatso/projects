@@ -1,0 +1,54 @@
+DROP TABLE REGISTRATION;
+DROP TABLE RESULTS;
+DROP TABLE COURSE;
+DROP TABLE STUDENT;
+DROP TABLE MODULE;
+
+CREATE TABLE MODULE(
+	moduleNo VARCHAR2(6) primary key,
+	moduleTitle VARCHAR2(25) NOT NULL,
+	noOfCredits NUMBER(3) NOT NULL	
+);
+
+CREATE TABLE STUDENT(
+	studentNo NUMBER(7) PRIMARY KEY,
+	studentInitials VARCHAR2(3) NOT NULL,
+	studentName VARCHAR2(25) NOT NULL,
+	gender VARCHAR2(1) NOT NULL check ((gender like 'F' OR gender like 'M')),
+	dob DATE NOT NULL,
+	email VARCHAR(25) NOT NULL CHECK (email like '%@sun.ac.uk')
+);
+
+CREATE TABLE COURSE(
+	courseCode VARCHAR(5) PRIMARY KEY,
+	courseTitle VARCHAR2(25)
+);
+
+CREATE TABLE RESULTS(
+	AcademicYear VARCHAR(7),
+	Semester VARCHAR(4) CHECK (Semester like 'SEM%' or Semester = 'Resit'),
+	moduleNo VARCHAR2(6),
+	studentNo NUMBER(7),
+	component1Result Number(3) Not Null CHECK ((component1Result < 100) or (component1Result = 100)),
+	component1Weighting Number(3) Not Null CHECK ((component1Weighting < 100) or (component1Weighting = 100)),
+	component2Result Number(3) CHECK ((component2Result < 100) or (component2Result = 100)),
+	component2Weighting Number(3) CHECK (component2Weighting < 100),
+	overallMark Number(3) NOT NULL,
+	status VARCHAR(5) NOT NULL,
+	comments VARCHAR(20), 
+	FOREIGN KEY (moduleNo) REFERENCES MODULE(moduleNo),
+	FOREIGN KEY (studentNo) REFERENCES STUDENT(studentNo),
+	Constraint Comp_key PRIMARY KEY (Semester, AcademicYear, moduleNo, studentNo)
+);
+
+CREATE TABLE REGISTRATION(
+	studentNo NUMBER(7),
+	courseCode VARCHAR(5),
+	modes VARCHAR(2) NOT NULL,
+	status VARCHAR(1) NOT NULL,
+	startDate DATE NOT NULL,
+	courseResult VARCHAR(25),
+	FOREIGN KEY (studentNo) REFERENCES STUDENT(studentNo),
+	FOREIGN KEY (courseCode) REFERENCES COURSE(courseCode),
+	Constraint Composite PRIMARY KEY (studentNo, courseCode)
+);
