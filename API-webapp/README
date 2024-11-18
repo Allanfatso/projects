@@ -1,0 +1,11 @@
+# Weather Forecast Application
+
+This project is a weather forecast app that retrieves live weather data from the OpenWeatherMap API 
+and optimizes performance through server-side and browser caching. The app first implements basic 
+weather data retrieval and displays key information such as temperature, wind speed, and humidity. 
+It then incorporates server-side caching with PHP and MySQL to reduce unnecessary API calls, 
+followed by browser caching using the JavaScript localStorage API to avoid excessive network or server access.
+This ensures the app delivers a seamless user experience by minimizing delays and improving efficiency.
+
+The app's architecture is documented with UML deployment diagrams that showcase the evolution of the system, 
+from the initial client-side structure to the final version with integrated server and browser caching.
