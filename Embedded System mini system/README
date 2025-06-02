@@ -1,0 +1,17 @@
+# Traffic Light Sensor System
+
+This project develops a traffic light sensor system that detects when cars pass through a red light 
+or move beyond a certain distance without the use of cameras. It uses an ultrasonic distance sensor 
+to measure the car's proximity to the traffic light and a PIR sensor that activates when a car is 
+within range. The system includes two Arduino boards to process inputs and control outputs, with LEDs 
+simulating traffic lights (red, yellow, green) and an LCD display to warn about violations. The goal 
+is to enhance road safety on busy or accident-prone roads by detecting and signaling traffic offenses in real time.
+
+The program is split into two parts: one handles the sensor inputs (ultrasonic and PIR), while the other controls 
+the LCD display and LED traffic lights. Despite some performance limitations due to the Arduino's memory capacity, 
+the system correctly detects cars passing the red light and classifies it as a violation when the car moves beyond 
+the set distance. Although the LCD display couldn't show results due to memory constraints, the serial monitor provides 
+the necessary feedback. This setup can be useful in real-time monitoring systems for high-traffic areas.
+
+Project link
+https://www.tinkercad.com/things/ffSaEJawX1s?sharecode=ImMNtRANVZco_xKZATYT3Zu6VVQXyD-f4f1hfDLRF7s

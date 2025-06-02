@@ -1,0 +1,64 @@
+INSERT INTO MODULE VALUES(
+	('120894', 'BSC COMPUTER ENGINEERING', 120);
+	('213931', 'BSC BUSINESS & MARKETING', 120);
+	('127042', 'BSC MEDICINE & HEALTH SCIENCE', 210);
+	('120919', 'BSC ARTIFICIAL INTELLIGENCE', 120);
+	('321239', 'BA HISTORY & SOCIOLOGY', 120);
+);
+
+INSERT INTO STUDENT VALUES(
+	();
+	();
+	();
+	();
+	();
+	();
+	();
+	();
+);
+
+INSERT INTO COURSE VALUES(
+	();
+	();
+	();
+	();
+	();
+);
+
+INSERT INTO RESULTS VALUES(
+	();
+	();
+	();
+	();
+	();
+	();
+	();
+	();
+);
+
+INSERT INTO REGISTRATION VALUES(
+	();
+	();
+	();
+	();
+	();
+	();
+	();
+	();
+
+);
+
+/*
+a. Some Modules may not have any Students allocated yet.
+b. There may be some Students who have yet to enrol on a Module.
+c. Some Courses may be new and not have any Students taking it.
+d. A Student must be registered on a Course.
+e. The test data should be appropriate to the queries requested (that 
+is, no query should return “no rows retrieved”). 
+Give  thought  to  what  data  should  be  added.  As  a  minimum,  each  table 
+should have at least 5 rows in it, but some should be more, for example, 
+you  may  have  5  modules,  but  each  module  should  have  at  least  5-6 
+students  enrolled  on  it.  Basically,  the  tables  at  the  many  end  of  a 
+relationship should therefore contain more data than the relation at the one 
+end. 
+*/
