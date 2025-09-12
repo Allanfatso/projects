@@ -1,0 +1,1 @@
+This is a movie reviewing website with a functional comment section. It uses the html5 api for voice-to-text and has a responsive web design.
