@@ -1,8 +1,0 @@
-# Mini Network Security Project - Zone-Based Firewall with IDS & SSH
-Project Overview
-This project focuses on securing a network through the implementation of a functional zone-based firewall, 
-Intrusion Detection System (IDS), and SSH configuration. 
-The network setup is designed to enhance security by creating different zones for various types of traffic, 
-each protected by appropriate firewall rules. The IDS is used to monitor and analyze network traffic for 
-signs of suspicious activity, while SSH is configured to ensure secure remote access to network devices.
-
