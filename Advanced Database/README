@@ -1,0 +1,18 @@
+# University Results and Course Enrollment System
+
+This project implements a database system for SUN University to track student module results and
+their enrollment in courses. The system includes tables for students, modules, and course enrollments, 
+as well as views to provide detailed reports on student performance. The database schema supports 
+complex relationships between students and their enrolled modules, tracking assessment components 
+such as portfolios, coursework, exams, and practicals, with individual weightings. Triggers are used 
+to audit changes to module results, ensuring data integrity and preventing unauthorized actions like
+deletions or incorrect updates to overall marks. Additionally, audit trails are created for every
+modification, capturing the old and new values of results, components, and status changes.
+
+The project also explores database security techniques, including the use of triggers for auditing 
+and preventing unauthorized access or manipulation of data. Fine-grained auditing is discussed as 
+an alternative to traditional triggers, providing more flexibility and less performance overhead. 
+This approach allows for detailed monitoring of database activity, capturing not only DML actions but 
+also SQL execution and result sets, which improves the system's forensic capabilities. 
+The system is designed with scalability in mind, but performance considerations such as trigger overhead 
+and fine-grained auditing are key aspects of the implementation.

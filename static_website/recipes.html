@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Explore CHIDO DAIRIES Amasi Recipes: Sweet and Savory Delights | Cooking with African Fermented Milk</title>
+    <meta name="description" content="Discover a world of culinary creativity with our Amasi recipes. 
+    From delectable desserts to savory dishes, unlock the delicious potential of African fermented milk in your kitchen. Get cooking inspiration now!" />
+
+    <style>
+     
+	 body {
+		background-image: url('images/mug2.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+        
+	}
+
+	@media (max-width: 600px) {
+		body {
+		background-size: cover;
+		background-position: center;
+		}
+	}
+
+      
+      .topimage {
+        text-align: center;
+        position: relative;
+       
+      }
+
+      .topimage img {
+        max-width: 100%;
+        width: 100%;
+		    position: relative;
+        height: auto;
+        max-width: 3000px;
+        border-radius: 55px;
+      }
+
+      
+      .body-text {
+        max-width: 100%;
+        width: 100%;
+        
+        margin-left: auto;
+        margin-right: auto;
+        text-align:justify;
+      }
+
+    
+
+	  .cutout {
+		background-color: white;
+		color: black;
+		font-size: 3vw;
+		font-weight: bold;
+		margin: 0 auto;
+		padding: 10px;
+		width: fit-content;
+		text-align: center;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		mix-blend-mode: screen;
+		z-index: 999;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+	  }
+
+      
+.recipes {
+  max-width: 100%;
+  border:rgb(5, 3, 0);
+  /*max-width: 500px;*/
+  margin: 50px auto;
+  padding: 20px;
+  background: none;
+  text-align: justify;
+  position: relative;
+  font-family: 'Alegreya', serif;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  color: whitesmoke;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Alegreya', serif;
+}
+
+.recipes img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  max-width: 250px;
+  width: 100%;
+  float: left;
+  margin-right: 15px;
+  border-radius: 25px;
+  object-fit: contain;
+}
+
+.recipes h2 {
+  color: rgb(237, 187, 95);
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h1{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: whitesmoke;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+      }
+
+      .heading {
+    overflow: hidden;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+   text-align: center;
+   left: -36px;
+}
+	
+                /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: rgba(255, 140, 0, 0.3);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  color: whitesmoke;
+  border-radius: 25px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color:  green;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+button{
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgba(255, 140, 0, 0.3);
+    border: 1px solid #c46400;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+
+}
+
+button:hover{
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.footer{
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer p {
+    color: whitesmoke;
+    font-size: 10px;
+    text-align: center;
+    
+}
+
+.footer h1{
+    text-align: center;
+    font-size: 14px;
+}
+  
+.fa {
+  font-size: 30px;
+  width: 25px;
+  text-align: center;
+  border-radius: 25%;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-instagram {
+  background: #d9446e;
+  color: white;
+}
+ 
+.fa-phone{
+  background: #55ACEE;
+  color: white;
+
+}
+
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+
+    <script src="nav.js"></script>
+  </head>
+    <div class="topnav" id="mytopnav">
+      <a href="https://www.chidodairies.com/index.html" class="active">Home</a>
+      <a href="https://www.chidodairies.com/culturedmilk.html" class="">What's cultured milk?</a>
+      <a href="https://www.chidodairies.com/recipes.html" class="">Our Recipes</a>
+      <div class="dropdwn">
+          <button class="dropbtn">Contact Us<i class="fa  fa-caret-down"></i></button>
+          <div class="dropdown-content">
+              <a href="https://www.chidodairies.com/order.html">Available stores</a>
+              <a href="https://www.chidodairies.com/order.html">Enquiry</a>
+          </div>
+      </div>
+        <a href="javascript:void(0);" class="icon" onclick="myfunction()">&#9776;</a>
+      </div>
+	<div class="topimage">
+      <img src="images/cow2.jpg" alt="cows">
+	  <div class="cutout">
+		  CHIDO DAIRIES
+	  </div>
+  </div>
+	
+		
+    <div class="heading">
+        <h1>Recipes</h1>
+    </div>
+
+    <div class="recipes">
+      <img src="images/amasichick.jpg" alt="recipe">
+      <h2>Chicken Curry with Amasi</h2>
+      <p>Add an amasi african twist to your curries...</p>
+      <button id="myBtn1">View Recipe</button>
+    </div>
+
+    <div class="recipes">
+      <img src="images/bakedamasi.jpg" alt="recipe">
+      <h2>Amasi Baked Custard Pudding</h2>
+      <p>This melt-in-the-mouth recipe is the perfect treat for any occasion. Take care not to overfill the baking dish, the custard rises as it bakes!</p>
+      <button id="myBtn2">View Recipe</button>
+    </div>
+
+    <div class="recipes">
+      <img src="images/rusk.jpg" alt="recipe">
+      <h2>Amasi Rusks</h2>
+      <p>A tea time treat in South African households. Tasty, Quick and Easy to make...</p>
+      <button id="myBtn3">View Recipe</button>
+    </div>
+
+    
+    <div class="footer">
+        <div>
+            <a href="https://www.facebook.com/p/Chido-Dairies-100082992715992/" class="fa fa-facebook"></a>
+            <h1>CHIDO DAIRIES: 2023 All rights reserved</h1>
+            <a href="https://www.chidodairies.com/terms&conditions-chidodairies.html"><p>TERMS & CONDITIONS</p></a>
+            <a href="https://www.chidodairies.com/privacypolicy-chidodairies.html"><P>PRIVACY STATEMENT</P></a>
+            <p>Image by <a href="https://www.freepik.com/free-photo/yellow-cup-with-spilling-milk_4623197.htm#query=milk%20splash&position=1&from_view=search&track=ais">Freepik</a></p>
+        </div>
+    </div>
+  
+
+    <div id="myModal1" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Ingredients</h1>
+            <ul>
+                <li>1½ onion</li>
+                <li>6 ripe, almost overripe tomatoes</li>
+                <li>2 tins Italian diced tomatoes</li>
+                <li>6 garlic cloves (don’t use the garlic in the tubs)</li>
+                <li>Thumb-sized ginger, peeled</li>
+                <li>2 chicken stock cubes</li>
+                <li>Red chili, to your taste</li>
+                <li>½ red pepper, for sweetness</li>
+                <li>8 chicken breasts</li>
+                <li>Proper masala, you can mix your own e.g., Garam masala and a proper curry mix (more masala than curry). I have my own mix I get from a shop here.</li>
+                <li>1 teaspoon cumin seeds</li>
+                <li>4 – 6 curry leaves (optional)</li>
+                <li>250 ml cream</li>
+                <li>1 tablespoon butter</li>
+                <li>Basmati rice</li>
+                <li>Full cream Amasi</li>
+            </ul>    
+            <h1>Method:</h1>        
+            <p>
+                <ol>
+                <li>First chop the onions and saute onions in olive oil and butter, when they start going soft, add the chopped garlic, chopped red pepper, 
+                chopped chilli and ginger. Saute for another 3 minutes, don’t let the garlic change color.</li> <li>Then add about 3 tablespoons of you masala 
+                mix along with the cumin seads and let the spices combine with the onion mix.</li>
+                <li>Next add the chopped tomato’s while turning the heat all the way down.</li>
+                <li>Add salt pepper. Stiring for about 3 – 5 min.</li>
+                <li>Add chicken stock dissolved in 500 ml boiling water.</li>
+                <li>Stir all together</li>
+                <li>Add about 500 ml water.</li>
+                <li>Bring all to a boil and then turn the heat all the way down and let it start to simmer. Stir every so often to make sure nothing gets 
+                stuck to the bottom.</li>
+                <li>Cube your chicken, just smaller than a 1cm pieces. Add the full cream Amasi, another 2 spoons masala, about a table spoon of garlicky,
+                 salt and pepper. Let this stand for about 2 hours.</li>
+                <li>After about 2 – 3 hours your tomato mix will start getting thicker. At this point you need to take it off the heat and place it in a 
+                blender. Make sure to blend it until smooth.</li>
+                <li>Fry your chicken pieces for a couple of minutes just to get the outside brown then add them to your tomato mix. Add another cup of water 
+                and let this simmer until it becomes thicker making sure you don’t let the chicken break up. Now add the cream and butter and simmer for 
+                another 20 min.</li>
+                <li>Wash your rice, let it sit in water for about 30 min. Then rinse properly.
+                You want about 2 – 2.5 cups of rice.</li>
+                <li>Place the rice in a pot cover with water allowing water to be about more water than rice, about 3 cups. Bring to boiling point then turn 
+                the heat down all the way. Cover and let this steam till all the water has evaporated, about 5-10 min. Do not stir or do anything to the 
+                rice, you want it to get sticky. When done, turn the heat off and let it rest for 5 minutes with the lid on.</li>
+                </ol>
+            </p>
+        </div>
+    </div>
+
+    <div id="myModal2" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Ingredients</h1>
+            <ul>
+                <li>100 g butter</li>
+                <li>200 ml castor sugar</li>
+                <li>3 eggs</li>
+                <li>10 ml vanilla essence</li>
+                <li>400 ml flour</li>
+                <li>1 ml salt</li>
+                <li>2 l Buttermilk or Amasi</li>
+                <li>60 ml castor sugar</li>
+                <li>5 ml cinnamon</li>
+            </ul>
+            <h1>Method:</h1>
+            <p>Preheat oven to 180 °C and grease an oven dish.
+                <ol>
+
+                <li>Put the butter in bowl and beat until smooth. Add the sugar and beat until light and fluffy.</li>
+                
+                <li>In a separate bowl, beat eggs and vanilla together. Add to the butter mixture. Sift flour and salt
+                together. Add the flour and amasi to the butter mixture. Mix well.</li>
+                
+                <li>Pour the mixture into a oven-proof dish. Put in the oven and bake for 45 minutes or until set in the centre.</li>
+                
+                <li>Mix sugar and cinnamon together in a bowl. Remove pudding from oven and sprinkle the cinnamon-sugar on top. Return to the oven for 10 minutes more,
+                then serve.</li>
+                </ol>
+            </p>
+        </div>
+    </div>
+
+    <div id="myModal3" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h1>Ingredients</h1>
+            <ul>
+                <li>1 kg flour - cake</li>
+                <li>180 ml sugar</li>
+                <li>10 ml salt</li>
+                <li>20 ml Baking powder</li>
+                <li>500 g butter - cold, cubed</li>
+                <li>500 ml Amasi</li>
+                <li>2 eggs</li>
+            </ul>
+            <h1>Method</h1>
+            <p>
+                <ol>
+                    <li>Preheat the oven to 180°C. Grease a 40 x 25cm baking sheet with non-stick spray.</li>
+                    <li>Mix the cake flour, sugar, salt, and baking powder in a large bowl. Rub the cold, cubed butter into the flour mixture until it reaches the texture of breadcrumbs.</li>
+                    <li>In a separate bowl, whisk the buttermilk and eggs together. Add this mixture to the flour mixture and combine well until a dough forms.</li>
+                    <li>Transfer the dough to the greased baking sheet, spreading it out evenly.</li>
+                    <li>Bake the dough in the preheated oven for 20-25 minutes or until it's cooked through and golden brown.</li>
+                    <li>Once baked, remove the sheet from the oven and let the dough cool outside the oven for 30 minutes.</li>
+                    <li>After cooling, turn out the baked dough onto a cutting board and reduce the oven temperature to 60°C. Switch on the oven fan.</li>
+                    <li>Slice the baked dough into long pieces, creating rusks, and arrange them on the oven rack.</li>
+                    <li>Leave the rusks in the oven overnight to dry at the low temperature (60°C) with the oven fan on. This drying process will turn them into crispy rusks.</li>
+                    <li>Once fully dried, remove the rusks from the oven and store them in an airtight container.</li>
+                </ol>                
+            </p>
+        </div>
+    </div>
+
+
+  <script src="modal.js"></script>
+</body>
+</html>
