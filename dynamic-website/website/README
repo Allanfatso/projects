@@ -1,0 +1,19 @@
+# Movie Review Website
+
+This dynamic website allows users to review movies by adding them to a database, 
+along with personal ratings and reviews. The website features user sign-up and login functionality, 
+allowing personalized experiences and secure access to reviews and ratings. PHP and MySQL are used to 
+handle backend logic and database management. The website supports full CRUD (Create, Read, Update, Delete) 
+operations on movie records, enabling users to manage their reviews.
+
+Key features include:
+
+User Authentication: Users can sign up, log in, and manage their accounts.
+Movie Database: Users can add, amend, and delete movie entries, along with their personal reviews.
+Search Functionality: Users can search for movies based on multiple criteria (e.g., genre, release year, rating).
+Cookies & Sessions: Cookies store user preferences, and sessions maintain user state across visits.
+Ajax Support: Autocomplete and form assistance improve user experience.
+MySQL Database Integration: All movie and user data is stored securely in a MySQL database.
+The website is designed to be flexible and user-friendly, offering a seamless experience for managing movie reviews. 
+Further enhancements could include better personalization features, error prevention measures and UX.
+
